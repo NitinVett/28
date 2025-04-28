@@ -6,10 +6,13 @@ class SUIT(Enum):
     HEARTS = auto()
     SPADES = auto()
     
+    # String representation of SUIT enum
     def __str__(self) -> str:
         return self.name
     
 class TYPE(Enum):
+
+    # defines which cards beat one another (ex. Nine>ACE)
     SEVEN = auto(1)
     EIGHT = auto(2)
     QUEEN = auto(3)
@@ -19,10 +22,11 @@ class TYPE(Enum):
     NINE = auto(7)
     JACK = auto(8)
 
-
+    # String representation of TYPE enum
     def __str__(self) -> str:
         return self.name
     
+    # defines the point value of each card
     def __int__(self) -> int:
         values = {
             TYPE.SEVEN: 0,
