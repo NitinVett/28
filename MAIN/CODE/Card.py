@@ -6,8 +6,8 @@ class Card:
     
     # Initializes a cards suit and type
     def __init__(self,suit:SUIT,CardType:TYPE)->None:
-        self.SUIT = suit
-        self.TYPE = CardType
+        self.SUIT:SUIT = suit
+        self.TYPE:TYPE = CardType
         
     
     # String representation of a Card
