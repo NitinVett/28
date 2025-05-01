@@ -10,4 +10,6 @@ class Player:
     def addCard(self,card:Card)->None:
         self.hand.append(card)
     
+    def __eq__(self, value):
+        return self.id == value.id
 
